@@ -1,0 +1,18 @@
+var format = function (text) {
+  // 初始化的时候, text是undefined
+  if (!text) {
+    return
+  }
+  // \\\\n 用来匹配 \n 
+  var reg = getRegExp('\\\\n', 'g')
+  return text.replace(reg, '\n&nbsp;&nbsp;&nbsp;&nbsp;')
+}
+
+var limit = function (array, length = 1) {
+  return array.slice(0, length)
+}
+
+module.exports = {
+  format: format,
+  limit: limit
+}
