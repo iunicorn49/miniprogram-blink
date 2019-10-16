@@ -1,6 +1,6 @@
 const config = {
   api_base_url: 'http://bl.7yue.pro/v1',
-  appkey: 'jVNCWjydTP1E5pTM'
+  appkey: 'ZzNeGqIsnNNNkSuo'
 }
 
 const tips = {
